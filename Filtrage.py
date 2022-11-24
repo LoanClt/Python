@@ -49,8 +49,8 @@ plt.plot(listeValeursTemps, listeValeursFiltrees)
 plt.show()
 
 #Q6
-listeFrequencesNonFiltrees = FFT(listeValeursEntree, Te)[0].pop(2)
-listeFrequencesFiltrees = FFT(listeValeursFiltrees, Te)[0].pop(2)
+listeFrequencesNonFiltrees = FFT(listeValeursEntree, Te)[0]
+listeFrequencesFiltrees = FFT(listeValeursFiltrees, Te)[0]
 
 plt.hist(listeFrequencesNonFiltrees)
 plt.hist(listeFrequencesFiltrees)
